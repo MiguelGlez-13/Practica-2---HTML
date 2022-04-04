@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+
+    <!--lo aplicamos desde un fichero de estilos: style.css
+        <style>
+        h1 {
+            color: #ff00aaaf;
+            font-size: 30px;
+        }
+
+        p {
+            color: #8400ffaf;
+            font-size: 21px;
+        }
+    </style>-->
+
+</head>
+
+<body>
+    <!-- rem <h1 style="color: #00fff27e; font-size: 18px;">Prueba de funciones</h1>-->
+    <!--otra forma de dar color y tamaño... ver el encabezdo de la URL-->
+    <h1>Prueba de funciones</h1>
+
+    <p>Prueba de funciones</p>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Jugabilidad</th>
+        </tr>
+
+        <tr>
+            <td>Año de lanzamiento</td>
+            <td>Pay to Win</td>
+            <td>Empresa desarrolladora</td>
+        </tr>
+
+    </table>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <!--Linea separadora-->
+    <hr>
+
+    <address>Valle de san lorenzo</address>
+
+
+
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/_b35esqYbNI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+
+
+    <!--Geolocalización - JS-->
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+    <hr>
+
+    <marquee>"Gammers World"</marquee>
+
+
+
+</body>
+
+</html>
